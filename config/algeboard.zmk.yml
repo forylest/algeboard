@@ -1,0 +1,15 @@
+file_format: "1"
+id: algeboard
+name: ALGEBOARD
+type: shield
+url: https://github.com/zhenchaopro/algeboard
+requires: [pro_micro]
+exposes: [i2c_oled]
+features:
+  - keys
+  - display
+  - underglow
+siblings:
+  - algeboard_left
+  - algeboard_right
+  - settings_reset
