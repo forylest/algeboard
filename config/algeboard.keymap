@@ -32,7 +32,7 @@
         windows {
             bindings = <
                  &kp ESC                &kp GRAVE    &kp N1    &kp N2  &kp N3     &kp N4     &kp N5    &kp N6  &kp N7     &kp N8    &kp N9     &kp N0   &kp MINUS  &kp EQUAL  &kp BACKSPACE
-                 &kp DEL                  &kp TAB     &kp Q     &kp W   &kp E      &kp R      &kp T     &kp Y   &kp U      &kp I     &kp O      &kp P    &kp LBKT   &kp RBKT  &kp BACKSLASH
+                     &m2                  &kp TAB     &kp Q     &kp W   &kp E      &kp R      &kp T     &kp Y   &kp U      &kp I     &kp O      &kp P    &kp LBKT   &kp RBKT  &kp BACKSLASH
    &kp F1    &kp PAGE_UP               &lt 1 CAPS     &kp A     &kp S   &kp D      &kp F      &kp G     &kp H   &kp J      &kp K     &kp L   &kp SEMI     &kp SQT  &kp ENTER    &kp PAGE_UP
    &kp F2  &kp PAGE_DOWN               &kp LSHIFT     &kp Z     &kp X   &kp C      &kp V      &kp B     &kp N   &kp M  &kp COMMA   &kp DOT  &kp SLASH  &kp RSHIFT     &kp UP  &kp PAGE_DOWN
  &lt 2 F3      &kp PSCRN  &mt LEFT_CONTROL DELETE  &kp LWIN  &kp LALT   &mo 1  &kp SPACE  &kp SPACE  &kp RALT   &mo 1   &kp RWIN  &kp LEFT   &kp DOWN   &kp RIGHT
