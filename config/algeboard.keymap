@@ -16,7 +16,7 @@
             compatible = "zmk,behavior-macro";
             label = "new_macro";
             #binding-cells = <0>;
-            bindings = <&kp RC(ENTER)>;
+            bindings = <&kp RC(KP_ENTER)>;
         };
         m2: m2 {
             compatible = "zmk,behavior-macro";
