@@ -12,17 +12,11 @@
 
 / {
     macros {
-        m2: m2 {
-            compatible = "zmk,behavior-macro";
-            label = "new_macro";
-            #binding-cells = <0>;
-            bindings = <&kp LA(LSHFT)>;
-        };
         m1: m1 {
             compatible = "zmk,behavior-macro";
             label = "new_macro";
             #binding-cells = <0>;
-            bindings = <&kp RC(ENTER)>;
+            bindings = <&kp LA(LSHFT)>;
         };
     };
 
@@ -32,7 +26,7 @@
         windows {
             bindings = <
                  &kp ESC                &kp GRAVE    &kp N1    &kp N2  &kp N3     &kp N4     &kp N5    &kp N6  &kp N7     &kp N8    &kp N9     &kp N0   &kp MINUS  &kp EQUAL  &kp BACKSPACE
-                     &m2                  &kp TAB     &kp Q     &kp W   &kp E      &kp R      &kp T     &kp Y   &kp U      &kp I     &kp O      &kp P    &kp LBKT   &kp RBKT  &kp BACKSLASH
+                 &kp DEL                  &kp TAB     &kp Q     &kp W   &kp E      &kp R      &kp T     &kp Y   &kp U      &kp I     &kp O      &kp P    &kp LBKT   &kp RBKT  &kp BACKSLASH
    &kp F1    &kp PAGE_UP               &lt 1 CAPS     &kp A     &kp S   &kp D      &kp F      &kp G     &kp H   &kp J      &kp K     &kp L   &kp SEMI     &kp SQT  &kp ENTER    &kp PAGE_UP
    &kp F2  &kp PAGE_DOWN               &kp LSHIFT     &kp Z     &kp X   &kp C      &kp V      &kp B     &kp N   &kp M  &kp COMMA   &kp DOT  &kp SLASH  &kp RSHIFT     &kp UP  &kp PAGE_DOWN
  &lt 2 F3      &kp PSCRN  &mt LEFT_CONTROL DELETE  &kp LWIN  &kp LALT   &mo 1  &kp SPACE  &kp SPACE  &kp RALT   &mo 1   &kp RWIN  &kp LEFT   &kp DOWN   &kp RIGHT
@@ -41,11 +35,11 @@
 
         windows_fn {
             bindings = <
-               &rgb_ug RGB_TOG  &rgb_ug RGB_EFF  &kp F1         &kp F2               &kp F3            &kp F4      &kp F5  &kp F6             &kp F7           &kp F8           &kp F9       &kp F10           &kp F11       &kp F12  &trans
-               &rgb_ug RGB_SAI           &tog 2  &trans  &kp RC(ENTER)               &kp UP  &kp C_AC_REFRESH      &trans  &trans  &kp C_VOLUME_DOWN     &kp C_BRI_UP  &kp C_VOLUME_UP        &trans            &trans        &trans  &trans
-       &tog 3  &rgb_ug RGB_SAD           &trans  &trans       &kp LEFT             &kp DOWN         &kp RIGHT      &trans  &trans           &kp HOME     &kp C_BRI_DN          &kp END        &trans            &trans           &m1  &trans
- &out OUT_USB  &rgb_ug RGB_BRI           &trans  &trans         &trans  &kp C_AL_CALCULATOR            &trans      &trans  &trans             &trans           &trans           &trans        &trans  &kp C_PLAY_PAUSE  &kp C_VOL_UP  &trans
- &out OUT_BLE  &rgb_ug RGB_BRD           &trans  &trans         &trans               &trans  &kp C_PLAY_PAUSE  &kp C_MUTE  &trans             &trans  &rgb_ug RGB_TOG       &kp C_PREV  &kp C_VOL_DN        &kp C_NEXT
+               &rgb_ug RGB_TOG  &rgb_ug RGB_EFF  &kp F1    &kp F2               &kp F3            &kp F4      &kp F5  &kp F6             &kp F7           &kp F8           &kp F9       &kp F10           &kp F11        &kp F12  &trans
+               &rgb_ug RGB_SAI           &tog 2  &trans       &m1               &kp UP  &kp C_AC_REFRESH      &trans  &trans  &kp C_VOLUME_DOWN     &kp C_BRI_UP  &kp C_VOLUME_UP        &trans            &trans         &trans  &trans
+       &tog 3  &rgb_ug RGB_SAD           &trans  &trans  &kp LEFT             &kp DOWN         &kp RIGHT      &trans  &trans           &kp HOME     &kp C_BRI_DN          &kp END        &trans            &trans  &kp RC(ENTER)  &trans
+ &out OUT_USB  &rgb_ug RGB_BRI           &trans  &trans    &trans  &kp C_AL_CALCULATOR            &trans      &trans  &trans             &trans           &trans           &trans        &trans  &kp C_PLAY_PAUSE   &kp C_VOL_UP  &trans
+ &out OUT_BLE  &rgb_ug RGB_BRD           &trans  &trans    &trans               &trans  &kp C_PLAY_PAUSE  &kp C_MUTE  &trans             &trans  &rgb_ug RGB_TOG       &kp C_PREV  &kp C_VOL_DN        &kp C_NEXT
             >;
         };
 
